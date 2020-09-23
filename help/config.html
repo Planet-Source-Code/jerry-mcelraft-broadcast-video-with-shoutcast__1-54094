@@ -1,0 +1,75 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Configuration Setup</title>
+</head>
+
+<body>
+
+<p align="center"><font face="Verdana" size="5">Configuration Setup</font></p>
+<p align="left"><font face="Verdana">The first step to using nsvgui is getting
+the config setup. This lets the program know how you want it to operate. It
+starts off with a brief description of the program and a link to the homepage
+incase you ever need to get back to the site. Only two tabs you need to worry
+about, Shoutcast and Encoding.</font></p>
+<p align="center"><font face="Verdana"><u>Shoutcast tab</u><br><img border="0" src="images/config01.gif" width="318" height="238"></font></p>
+
+<p align="left"><font face="Verdana"><b>Host IP</b>: This is the IP of where to
+stream to. If you have no idea what a shoutcast server is, then you need to
+check out <a href="http://www.shoutcast.com">http://www.shoutcast.com</a>. You
+can't run a stream without one. Enter the IP in here, without the port. If you
+are running the server on the same pc as this program, then use localhost or
+127.0.0.1 as the IP.</font></p>
+
+<p align="left"><font face="Verdana"><b>Port</b>: This specifies what port to
+connect to the shoutcast server with. Even though the source is suppose to use
+the baseport + 1, you don't do that with this. The default port is 8000, check
+your shoutcast config if you are unsure on what yours is.</font></p>
+
+<p align="left"><font face="Verdana"><b>Password</b>: This is the password that
+the shoutcast server requires. Check your shoutcast config if you are unsure of
+what it is. I wouldn't recommend using the default &quot;changeme&quot; for
+security reasons (it says changeme for a reason).</font></p>
+
+<p align="center"><font face="Verdana"><u>Encoding tab</u><br><img border="0" src="images/config02.gif" width="318" height="238"><br>(If
+you did all your encoding ahead of time, you can skip this)</font></p>
+
+<p align="left"><font face="Verdana"><b>Type</b>: This is where you choose the
+codecs you want. You need to have the codecs installed on your pc to use them.
+You can get VP3 <a href="http://www.theora.org/~mauricio/VP3_VFW_Win.exe">here</a>
+and get VP6 <a href="http://on2.com/vp6.php3">here</a>. VP6 produces higher
+quality files, so it is recommended over VP3.</font></p>
+
+<p align="left"><font face="Verdana"><b>Bitrate</b>: This is where you set the
+bitrate of the stream. The math for figuring this out is upstream/watchers=bitrate.
+You can find out your upstream from <a href="http://pcpitstop.com/internet/BandwidthUp.asp">here</a>.
+A typical cable/DSL upstream speed is 256kbps, so if you want 4 listeners,
+that'd be 256/4 which would be 64kbps. If you want more watchers with higher
+quality, you can always look into professional servers.</font></p>
+
+<p align="left"><font face="Verdana"><b>Force framerate</b> (experts only): Use
+this if nsvenc has a problem detecting the framerate of a file. This happens a
+lot with XVID movies.</font></p>
+
+<p align="left"><font face="Verdana"><b>Custom profiles</b> (experts only): Use
+this if you would like to configure the codecs before the encode.</font></p>
+
+<p align="left"><font face="Verdana"><b>Delete encoded files</b>: Use this if
+you want the encoded files to be deleted after they are used in the stream. If
+you keep this off, the program will use previously encoded files if you insert
+the source files into future playlists, cutting the time to get the stream
+running down dramaticly.</font></p>
+
+<p align="left"><font face="Verdana"><b>Save encoded files to</b>: This is the
+folder that the files will be encoded to. If you don't care where they go, leave
+at default and nsvgui will handle it.</font></p>
+
+<p align="center"><font face="Verdana">That's it, you're done!<br><a href="index.html">Go back to index</a></font></p>
+
+</body>
+
+</html>
